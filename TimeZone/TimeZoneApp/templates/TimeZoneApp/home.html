@@ -1,0 +1,17 @@
+{% extends "TimeZoneApp/base.html" %}
+
+{% block changesContent %}
+    <div class="center">
+        <h1>Time Zone</h1>
+        <p class="p1">Bienvenidos a Time Zone, una app desarrollada para consultar los datos del tiempo<br>
+        en cualquier parte del mundo y en cualquier momento.
+        </p>
+        
+        <form method="post">
+            {% csrf_token %}
+            <label for="city">Consulte una ciudad en específico:</label>
+            <input type="text" id="city" name="city" required>
+            <button type="submit" class="btn btn-danger">Search</button>
+        </form>
+    </div>
+{% endblock %}

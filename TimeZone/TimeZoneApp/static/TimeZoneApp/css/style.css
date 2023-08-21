@@ -1,0 +1,27 @@
+.content{
+    margin-top: 25px !important;
+    padding: 10px;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.my-body {
+    background-color: #9ED2BE;
+}
+
+.body-nav-color {
+    background-color: #D83A56;
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+.custom-font-size {
+    font-size: 24px;
+  }
+
+

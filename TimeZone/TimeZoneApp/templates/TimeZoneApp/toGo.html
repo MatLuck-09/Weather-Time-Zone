@@ -1,0 +1,18 @@
+{% extends "TimeZoneApp/base.html" %}
+
+{% block changesContent %}
+
+<div class="center">
+    <title>TimeZoneApp</title>
+    
+    <ul>
+        <h1>Ciudad de: {{city}}</h1>
+        <li><h3>Hoy tenemos un clima: {{main}}</h3></li>
+        <li><h3>Sensacion termica: {{feels|floatformat:2}}°</h3></li>
+        <li><h3>Temperatura actual: {{temp|floatformat:2}}°</h3></li>
+        <li><h3>Temperatura maxima esperada: {{max|floatformat:2}}°</h3></li>
+        <li><h3>Temperatura minima esperada: {{min|floatformat:2}}°</h3></li>       
+    </ul>
+</div>
+
+{% endblock %}
